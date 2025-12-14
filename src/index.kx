@@ -1,0 +1,43 @@
+fn clamp(x, min, max) {
+  if x < min { return min }
+  if x > max { return max }
+  return x
+}
+
+fn lerp(a, b, t) {
+  return a + (b - a) * t
+}
+
+fn sum(arr) {
+  set total = 0
+  for v in arr {
+    set total = total + v
+  }
+  return total
+}
+
+fn mean(arr) {
+  set total = 0
+  for v in arr {
+    set total = total + v
+  }
+  return total / len(arr)
+}
+
+fn median(arr) {
+  set sorted = sort(arr)
+  set n = len(sorted)
+  if n % 2 == 1 {
+    return sorted[n / 2]
+  } else {
+    return (sorted[n / 2 - 1] + sorted[n / 2]) / 2
+  }
+}
+
+fn degToRad(x) {
+  return x * 3.141592653589793 / 180
+}
+
+fn radToDeg(x) {
+  return x * 180 / 3.141592653589793
+}
