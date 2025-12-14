@@ -1,4 +1,7 @@
 {
   "name": "math-extra",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "Additional mathematical utility functions for Kexra",
+  "author": "manjunathh-xyz",
+  "license": "MIT"
 }
